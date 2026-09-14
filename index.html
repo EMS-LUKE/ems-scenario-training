@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#071523">
-  <meta name="description" content="EMT-1／EMT-2 成人與嬰兒創傷、非創傷、ALS 與 OHCA 到院前救護情境演練系統">
+  <meta name="description" content="EMT-1／EMT-2 成人與嬰兒創傷、非創傷、有生命徵象及評估中轉 OHCA 到院前救護情境演練系統">
   <meta name="author" content="臺南市救護義消 陳冠言">
   <meta name="copyright" content="© 臺南市救護義消 陳冠言">
   <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
@@ -42,7 +42,7 @@
       html,body{width:100%;max-width:100%;overflow-x:hidden}body{-webkit-text-size-adjust:100%;touch-action:manipulation}.app{width:100%;padding:8px;display:block}.topbar{position:static;margin:-8px -8px 8px;padding:14px 10px 12px;display:flex!important;flex-direction:column!important;align-items:center!important;gap:12px;background:#f6fbfc}.topbar>*{width:100%;grid-column:auto!important;grid-row:auto!important}.brand{justify-content:center}.brand h1{font-size:23px;white-space:nowrap}.brand p{display:block;font-size:12px;line-height:1.4}.top-actions{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:8px}.top-actions>#startBtn,.top-actions>#resetBtn{display:block;grid-column:auto;min-height:54px;font-size:17px}.timer-wrap{width:100%}.timer{grid-row:auto;grid-column:auto;width:100%;margin:0;padding:10px;font-size:42px}.time-adjust{grid-template-columns:1fr 1fr;width:100%;gap:8px}.time-adjust button{width:100%;height:50px;font-size:17px}.time-adjust span{grid-column:1/-1;grid-row:1;font-size:15px;padding:3px}.scope-note{margin:0 0 10px;padding:13px 14px;text-align:left;font-size:14px}.main{display:flex;width:100%;gap:10px}.panel{width:100%;overflow:visible}.age-tabs{grid-template-columns:1fr 1fr;gap:8px;padding:10px}.age-tab{min-height:58px;font-size:18px}.scenarios{display:grid;grid-template-columns:1fr 1fr;gap:8px;overflow:visible;padding:0 10px 10px}.scenario{width:100%;min-width:0;min-height:112px;padding:13px 10px;white-space:normal}.scenario .num{display:grid;margin:0 auto 8px}.scenario strong{display:block;text-align:center;font-size:15px;line-height:1.35}.scenario small{display:block;margin:7px 0 0;text-align:center;font-size:12px}.mode-box,.source-box{margin:0 10px 10px;padding:13px;font-size:14px}.case-head{padding:16px 14px 11px}.case h2{font-size:23px;line-height:1.35}.stage-badge{font-size:13px;padding:9px 12px}.dispatch{margin:0 12px 12px;padding:13px;font-size:16px}.content{padding:0 12px 12px;width:100%}.vitals{display:grid;grid-template-columns:1fr 1fr;gap:8px;overflow:visible;width:100%}.vital{min-width:0;padding:12px}.vital:last-child:nth-child(odd){grid-column:1/-1}.vital span{font-size:13px}.vital b{font-size:18px;line-height:1.35;overflow-wrap:anywhere}.info-grid{display:block;width:100%}.card,.hidden-card{width:100%;margin-bottom:9px;padding:14px;font-size:16px}.card p,.card li{line-height:1.65}.standard ul{display:block;padding-left:22px}.standard li{margin-bottom:8px}.stage-controls{position:static;display:block;margin:0;padding:10px 12px 12px;border:0;border-top:1px solid var(--line);border-radius:0;box-shadow:none;background:white}.stage-controls>div:last-child{display:grid;grid-template-columns:1fr 1fr;gap:9px;width:100%}.stage-controls .btn{width:100%;min-height:56px;padding:13px 8px;font-size:17px}.score{max-height:none}.score-list{max-height:none;overflow:visible;padding:10px}.score-group h3{font-size:15px;padding:7px 4px}.item{grid-template-columns:30px 1fr 32px;align-items:center;min-height:51px;padding:9px 7px}.item input{width:24px;height:24px}.item label{font-size:16px;line-height:1.45}.pts{font-size:15px;text-align:right}.score-footer{position:static;margin:0;padding:14px;border:0;border-top:1px solid var(--line);border-radius:0}.penalty input{min-height:46px;font-size:16px}.footer{padding:12px 8px 4px;line-height:1.55}.summary{grid-template-columns:1fr 1fr}.modal .btn{width:100%;min-height:54px}
     }
   </style>
-  <style>html,body,.app{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}input{-webkit-user-select:text;user-select:text}.footer{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:7px;padding:12px 8px 4px}.footer>span{display:block;margin:0}@media(max-width:650px){.type-tabs,.mode-tabs{grid-template-columns:1fr 1fr;gap:8px;padding:0 10px 10px}.type-tab,.mode-tab{min-height:58px;font-size:18px}}</style>
+  <style>html,body,.app{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}input,select{-webkit-user-select:text;user-select:text}.footer{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:7px;padding:12px 8px 4px}.footer>span{display:block;margin:0}.source-detail{margin-top:10px!important;color:var(--muted);font-size:12px}.item:not(.critical-score){grid-template-columns:1fr auto 34px}.item select{min-width:72px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--text);padding:6px 5px;font-weight:700}.critical-score{background:#fff3f2}.critical-score input{accent-color:var(--red)}.critical-score .pts{color:var(--red);font-weight:800}.error-group h3{color:var(--red)}.score-guide{margin:10px 12px 0;padding:10px 12px;border:1px solid #d9e8ea;border-radius:10px;background:#f6fafb;color:#5e7982;font-size:12px;line-height:1.55}.score-guide b{color:#315e67}.key-action{background:#fff8e9;border-left:3px solid #dfad58}.key-tag{display:inline-block;margin-right:6px;padding:2px 6px;border-radius:999px;background:#f4d99f;color:#78531d;font-size:11px;font-weight:900}.major-count{margin-top:4px;color:#a55b54;font-size:12px;font-weight:800}.judge-card{background:#fbf8f2}.setup-card,.source-card{grid-column:1/-1}.setup-card ul,.source-card ul{margin:9px 0 0;padding-left:20px;line-height:1.6}.source-card a{color:#2f858b}.response-delay{margin-top:8px!important;color:#9a5d55}.final-errors{margin:-8px 0 14px!important;color:#a55b54!important;font-weight:800}@media(max-width:650px){.type-tabs,.mode-tabs{grid-template-columns:1fr 1fr;gap:8px;padding:0 10px 10px}.type-tab,.mode-tab{min-height:58px;font-size:18px}.item{grid-template-columns:1fr auto 36px!important}.critical-score{grid-template-columns:30px 1fr 48px!important}.item select{min-width:78px;min-height:42px}.source-detail{font-size:13px}.score-guide{font-size:13px}.setup-card,.source-card{grid-column:auto}}</style>
 </head>
 <body>
 <main class="app">
@@ -57,7 +57,7 @@
       <div class="panel-title">主要分類｜每類 6 個情境</div>
       <div class="age-tabs"><button id="adultTab" class="age-tab active">成人</button><button id="infantTab" class="age-tab">嬰兒</button></div>
       <div class="type-tabs"><button id="nontraumaTab" class="type-tab active">非創傷</button><button id="traumaTab" class="type-tab">創傷</button></div>
-      <div class="mode-tabs"><button id="alsTab" class="mode-tab active">ALS<br><small>維持生命徵象</small></button><button id="ohcaTab" class="mode-tab">OHCA<br><small>評估中轉 OHCA</small></button></div>
+      <div class="mode-tabs"><button id="alsTab" class="mode-tab active">有生命徵象<br><small>危急評估與處置</small></button><button id="ohcaTab" class="mode-tab">轉 OHCA<br><small>評估中失去生命徵象</small></button></div>
       <div id="scenarioList" class="scenarios"></div>
       <div class="source-box"><b>雙重教材基準</b><br><a href="https://ebook.nfa.gov.tw/1140527/mobile/index.html" target="_blank" rel="noopener">《2025 救護技術員教科書》</a>：學理與情境處置<br><a href="https://ebook.nfa.gov.tw/1140526/mobile/index.html" target="_blank" rel="noopener">《2025 教學用緊急醫療救護單項技術操作手冊》</a>：操作步驟與評分</div>
     </aside>
@@ -69,13 +69,15 @@
     </section>
     <aside class="panel score">
       <div class="panel-title">即時評分｜滿分 100</div>
+      <div class="score-guide"><b>評分錨點：</b>0＝未執行或錯誤；50%＝已執行但不完整、需提示或明顯延遲；100%＝獨立、正確且時機適當。每列只評一項行為；「不適用」僅能由題目預先指定，裁判不能自行排除計分。</div>
       <div id="scoreList" class="score-list"></div>
-      <div class="score-footer"><div class="total"><span>目前得分</span><b id="totalScore">0</b> / 100</div><label class="penalty">扣分 <input id="penalty" type="number" min="0" max="100" value="0"></label></div>
+      <div class="score-footer"><div class="total"><span>目前得分</span><b id="totalScore">0</b> / 100<div class="major-count">重大錯誤：<span id="majorErrorCount">0</span> 項</div></div><label class="penalty">依規則扣分 <input id="penalty" type="number" min="0" max="100" value="0"></label></div>
     </aside>
   </section>
   <footer class="footer"><span>依據：消防署 2025《救護技術員教科書》＋《教學用緊急醫療救護單項技術操作手冊》｜實務仍依授權與醫療指導</span><span>製作：臺南市救護義消 陳冠言｜2026-09</span><span class="visit-stat"><img src="https://hits.sh/ems-luke.github.io/ems-scenario-training.svg?label=%E7%80%8F%E8%A6%BD%E6%AC%A1%E6%95%B8&amp;color=65BCC0&amp;labelColor=56727B&amp;style=flat" alt="瀏覽次數" height="20"></span></footer>
 </main>
-<div id="overlay" class="overlay"><div class="modal"><h2 id="modalTitle">本題時間到</h2><p id="modalText"></p><div class="summary"><div><span>總得分</span><b id="finalScore"></b></div><div><span>完成階段</span><b id="finalStage"></b></div></div><button class="btn primary" id="closeModal">返回評分</button></div></div>
+<div id="overlay" class="overlay"><div class="modal"><h2 id="modalTitle">本題時間到</h2><p id="modalText"></p><div class="summary"><div><span>總得分</span><b id="finalScore"></b></div><div><span>完成階段</span><b id="finalStage"></b></div></div><p id="finalErrors" class="final-errors"></p><button class="btn primary" id="closeModal">返回評分</button></div></div>
+<script data-goatcounter="https://emsscenario.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script>
 const $=id=>document.getElementById(id);
 const x=(category,title,dispatch,initial,mid,problem,danger,action,rhythm='')=>({category,title,dispatch,initial,mid,problem,danger,action,rhythm});
@@ -83,12 +85,12 @@ const libraries={
 'adult-nontrauma-als':[
 x('呼吸道與呼吸','成人部分異物梗塞','用餐時突然劇烈咳嗽、呼吸困難。',['GCS 15','HR 112','RR 28','BP 148/86','SpO₂ 92%'],['GCS 14','HR 126','RR 10 弱','BP 132/80','SpO₂ 84%'],'仍能咳嗽及發聲，但有高調吸氣音。','咳嗽逐漸無力，說話能力下降。','鼓勵有效咳嗽、持續監測；轉為嚴重梗塞時立即依成人異物哽塞流程處置。'),
 x('呼吸道與呼吸','嚴重氣喘呼吸衰竭','氣喘患者喘鳴、只能說短句。',['GCS 15','HR 128','RR 34','BP 158/96','SpO₂ 88%'],['GCS 11','HR 86','RR 10 淺弱','BP 98/62','SpO₂ 78%'],'雙側廣泛 wheezing，已多次使用自備吸入劑。','喘鳴變小且意識下降，接近 silent chest。','高濃度氧氣、準備 BVM；EMT-2 依資格協助支氣管擴張劑並快速後送。'),
-x('循環','急性冠心症 STEMI','持續胸部重壓感並冒冷汗。',['GCS 15','HR 96','RR 22','BP 154/92','SpO₂ 95%'],['GCS 15','HR 108','RR 24','BP 104/68','SpO₂ 93%'],'胸痛延伸左肩與下巴，持續 25 分鐘。','疼痛加劇、噁心且血壓下降。','完成 OPQRST／SAMPLE、監測、十二導程心電圖（EMT-2）與快速後送通報。'),
-x('循環','過敏性休克','用藥後全身蕁麻疹、喘鳴與頭暈。',['GCS 15','HR 132','RR 28','BP 86/54','SpO₂ 90%'],['GCS 12','HR 148','RR 32','BP 70/42','SpO₂ 82%'],'嘴唇腫脹、wheezing、CRT 4 秒。','聲音沙啞、血壓與意識持續下降。','維持呼吸道與給氧；EMT-2 依授權使用腎上腺素筆、輸液並快速後送。'),
-x('神經學','疑似缺血性中風','突然口角歪斜、右側無力。',['GCS 14','HR 88','RR 18','BP 196/108','SpO₂ 96%'],['GCS 12','HR 82','RR 16','BP 204/112','SpO₂ 94%'],'最後正常時間為 35 分鐘前，FAST-ED 異常。','語言與右側肌力進一步惡化。','確認最後正常時間、血糖、神經評估與快速送往適當醫院；避免常規降壓。'),
+x('循環','疑似急性冠心症','持續胸部重壓感並冒冷汗。',['GCS 15','HR 96','RR 22','BP 154/92','SpO₂ 95%'],['GCS 15','HR 108','RR 24','BP 104/68','SpO₂ 93%'],'胸痛延伸左肩與下巴，持續 25 分鐘。','疼痛加劇、噁心且血壓下降。','完成 OPQRST／SAMPLE、監測、十二導程心電圖與快速後送通報。'),
+x('循環','過敏性休克','用藥後全身蕁麻疹、喘鳴與頭暈。',['GCS 15','HR 132','RR 28','BP 86/54','SpO₂ 90%'],['GCS 12','HR 148','RR 32','BP 70/42','SpO₂ 82%'],'嘴唇腫脹、wheezing、CRT 4 秒；本題設定救護車已配置腎上腺素注射筆。','聲音沙啞、血壓與意識持續下降。','維持呼吸道與給氧；EMT-2 確認適應症、器材配置及當地授權後協助施打腎上腺素注射筆，並依授權建立輸液路徑及快速後送。'),
+x('神經學','疑似急性腦中風','突然口角歪斜、右側無力。',['GCS 14','HR 88','RR 18','BP 196/108','SpO₂ 96%'],['GCS 12','HR 82','RR 16','BP 204/112','SpO₂ 94%'],'最後正常時間為 35 分鐘前，當地指定中風量表異常。','語言與右側肌力進一步惡化。','確認最後正常時間、血糖、神經評估與快速送往適當醫院；不得執行未授權的常規降壓。'),
 x('循環','敗血性休克','高燒、畏寒、呼吸急促且虛弱。',['GCS 14','HR 124','RR 28','BP 92/58','SpO₂ 93%'],['GCS 11','HR 138','RR 32','BP 74/44','SpO₂ 88%'],'兩天發燒與泌尿道症狀，皮膚溫熱、CRT 延長。','意識下降、低血壓與灌流惡化。','給氧、保暖、監測；EMT-2 依授權建立靜脈路徑與輸液，快速後送通報。')],
 'adult-nontrauma-ohca':[
-x('循環','急性冠心症轉 VF','胸痛、冒冷汗，初始意識清楚。',['GCS 15','HR 104','RR 22','BP 146/92','SpO₂ 95%'],['GCS 9','HR 142','RR 8 不規則','BP 78/46','SpO₂ 82%'],'典型壓迫性胸痛延伸至左肩及下巴。','突然頭暈癱軟，只剩瀕死呼吸。','立即重評反應、呼吸與頸動脈；轉 OHCA 後 CPR／AED。','VF／建議電擊'),
+x('循環','疑似急性冠心症轉 VF','胸痛、冒冷汗，初始意識清楚。',['GCS 15','HR 104','RR 22','BP 146/92','SpO₂ 95%'],['GCS 9','HR 142','RR 8 不規則','BP 78/46','SpO₂ 82%'],'典型壓迫性胸痛延伸至左肩及下巴。','突然頭暈癱軟，只剩瀕死呼吸。','立即重評反應、呼吸與頸動脈；轉 OHCA 後 CPR／AED。','VF／建議電擊'),
 x('呼吸道與呼吸','嚴重氣喘轉 PEA','嚴重喘鳴且只能說 2–3 個字。',['GCS 15','HR 128','RR 34','BP 158/96','SpO₂ 88%'],['GCS 8','HR 62','RR 6 淺弱','BP 72/40','SpO₂ 70%'],'已多次使用吸入劑，雙側 wheezing。','silent chest、意識下降、呼吸近乎停止。','立即 BVM；無脈搏後 CPR，AED 不建議電擊仍持續按壓。','PEA／不建議電擊'),
 x('呼吸道與呼吸','完全異物梗塞轉 OHCA','進食時突然抓住頸部，無法說話。',['清醒焦慮','HR 124','RR 無效','BP 164/94','SpO₂ 86%'],['反應下降','HR 54','RR 0','BP 70/38','SpO₂ 62%'],'不能咳嗽、不能發聲、無有效氣流。','梗塞未解除後失去反應。','依嚴重哽塞流程；失去反應後開始 CPR，每次開放呼吸道時檢視可見異物。','PEA／不建議電擊'),
 x('循環','嚴重過敏轉 PEA','蜂螫後臉唇腫脹、喘鳴。',['GCS 15','HR 138','RR 30','BP 82/48','SpO₂ 88%'],['GCS 7','HR 72','RR 8 淺弱','BP 54/30','SpO₂ 68%'],'蕁麻疹、stridor、wheezing 與休克。','意識、呼吸與心率快速下降。','立即支持 ABC；依資格執行過敏性休克處置，無脈搏後 CPR／AED。','PEA／不建議電擊'),
@@ -104,47 +106,47 @@ x('循環','頸髓傷神經性休克','跳水後四肢無力、低血壓。',['G
 'adult-trauma-ohca':[
 x('大出血','車禍骨盆傷轉 PEA','行人遭撞後骨盆疼痛、休克。',['GCS 14','HR 128','RR 26','BP 92/58','SpO₂ 95%'],['GCS 7','HR 154','RR 8','BP 58/34','SpO₂ 76%'],'骨盆不穩定疑內出血，無明顯外出血。','腹盆腔出血造成失代償性休克。','XABCDE、骨盆固定與保暖、快速後送；無脈搏後 CPR／AED。','PEA／不建議電擊'),
 x('大出血','腹股溝槍傷轉 PEA','腹股溝槍傷大量出血。',['GCS 14','HR 134','RR 28','BP 88/54','SpO₂ 95%'],['GCS 6','HR 68','RR 6','BP 50/28','SpO₂ 68%'],'接合處傷口噴湧性出血，一般止血帶位置不適用。','出血未控制，意識與脈搏快速下降。','填塞傷口並持續直接加壓；無脈搏後立即 CPR／AED。','PEA／不建議電擊'),
-x('循環','心前區刀傷轉 PEA','胸前刀傷、呼吸困難與頸靜脈怒張。',['GCS 14','HR 126','RR 28','BP 88/58','SpO₂ 91%'],['GCS 5','HR 146','RR 8','BP 54/34','SpO₂ 70%'],'心前區穿刺傷，心音低弱、脈壓窄。','阻塞性休克惡化並失去脈搏。','覆蓋傷口、支持 ABC、立即後送；OHCA 後 CPR／AED。','PEA／不建議電擊'),
+x('循環','心前區刀傷轉 PEA','胸前刀傷，刀具仍留置，患者呼吸困難且頸靜脈怒張。',['GCS 14','HR 126','RR 28','BP 88/58','SpO₂ 91%'],['GCS 5','HR 146','RR 8','BP 54/34','SpO₂ 70%'],'心前區穿刺傷且刀具仍在，心音低弱、脈壓窄。','阻塞性休克惡化並失去脈搏。','不得拔除刀具；固定留置異物、支持 ABC 並立即後送，轉 OHCA 後依創傷心跳停止流程處置。','PEA／不建議電擊'),
 x('呼吸道與呼吸','張力性氣胸轉 PEA','機車事故後單側胸痛與喘。',['GCS 14','HR 122','RR 32','BP 94/60','SpO₂ 86%'],['GCS 6','HR 62','RR 6','BP 48/28','SpO₂ 64%'],'右胸起伏小、右肺音極低、頸靜脈怒張。','呼吸衰竭與阻塞性休克迅速惡化。','給氧與 BVM、立即後送；EMT-1／2 不以侵入性減壓為必做，OHCA 後 CPR。','PEA／不建議電擊'),
 x('神經學','嚴重腦傷轉 OHCA','高處墜落後意識快速惡化。',['GCS 11','HR 96','RR 22','BP 166/94','SpO₂ 92%'],['GCS 4','HR 44','RR 6 不規則','BP 190/104','SpO₂ 66%'],'瞳孔不等大，疑顱內壓升高。','呼吸停止後心搏過緩並失去脈搏。','頸椎保護、有效通氣避免缺氧；無脈搏後 CPR／AED。','Asystole／不建議電擊'),
 x('循環','壓砸傷高血鉀轉 OHCA','下肢受壓兩小時後剛解除重物。',['GCS 14','HR 54','RR 24','BP 92/60','SpO₂ 94%'],['GCS 7','HR 28','RR 8','BP 52/30','SpO₂ 72%'],'雙腿腫脹僵硬，監測出現寬 QRS。','解除壓迫後緩脈與休克惡化。','支持 ABC、監測；依 EMT-2 授權與醫療指導處置，無脈搏後 CPR／AED。','Asystole／不建議電擊')],
 'infant-nontrauma-als':[
 x('呼吸道與呼吸','嬰兒部分異物梗塞','8 個月大進食後突然咳嗽、喘鳴。',['有反應','HR 154','RR 38','CRT 2 秒','SpO₂ 91%'],['反應下降','HR 172','RR 20 弱','CRT 3 秒','SpO₂ 82%'],'仍有哭聲與有效咳嗽。','哭聲變弱，氣流與咳嗽逐漸下降。','有效咳嗽時持續觀察；嚴重梗塞時依嬰兒背擊胸推流程處置。'),
 x('呼吸道與呼吸','細支氣管炎呼吸衰竭','8 個月大發燒、喘與喝奶下降。',['哭聲弱','HR 168','RR 52','T 38.2°C','SpO₂ 87%'],['嗜睡','HR 94','RR 18 淺弱','CRT 4 秒','SpO₂ 76%'],'鼻翼搧動、肋間凹陷、wheezing／crackles。','由心搏過速轉慢，哭聲消失。','PAT、給氧；呼吸不足時適當大小 BVM，每 2–3 秒一次並快速後送。'),
-x('呼吸道與呼吸','嚴重哮吼 Croup','18 個月大犬吠咳嗽與吸氣喘鳴。',['焦躁','HR 158','RR 42','CRT 2 秒','SpO₂ 92%'],['嗜睡','HR 174','RR 24 弱','CRT 3 秒','SpO₂ 84%'],'休息時仍有 stridor、胸骨上凹陷。','哭聲變弱且呼吸作功加劇後疲乏。','避免刺激、維持舒適姿勢與給氧；準備 BVM、快速後送。'),
-x('循環','嬰兒過敏性休克','10 個月大吃花生後紅疹、臉腫。',['有反應','HR 176','RR 42','BP 72/40','SpO₂ 90%'],['反應下降','HR 142','RR 20','CRT >4 秒','SpO₂ 80%'],'stridor、蕁麻疹與灌流不良。','四肢冰冷、哭聲變弱、低血壓惡化。','支持呼吸；EMT-2 依授權使用腎上腺素筆與輸液，快速後送。'),
-x('神經學','熱性痙攣','14 個月大高燒後全身抽搐。',['抽搐中','HR 178','RR 不規則','T 39.4°C','SpO₂ 89%'],['嗜睡','HR 146','RR 26','CRT 2 秒','SpO₂ 94%'],'抽搐已持續 4 分鐘，無外傷。','抽搐停止後處於 postictal，呼吸仍可維持。','保護呼吸道、給氧、測血糖與體溫、記錄抽搐時間並後送。'),
+x('呼吸道與呼吸','嚴重哮吼 Croup','11 個月大犬吠咳嗽與吸氣喘鳴。',['焦躁','HR 158','RR 42','CRT 2 秒','SpO₂ 92%'],['嗜睡','HR 174','RR 24 弱','CRT 3 秒','SpO₂ 84%'],'休息時仍有 stridor、胸骨上凹陷。','哭聲變弱且呼吸作功加劇後疲乏。','避免刺激、維持舒適姿勢與給氧；準備 BVM、快速後送。'),
+x('循環','嬰兒過敏性休克','10 個月大吃花生後紅疹、臉腫。',['有反應','HR 176','RR 42','BP 72/40','SpO₂ 90%'],['反應下降','HR 142','RR 20','CRT >4 秒','SpO₂ 80%'],'stridor、蕁麻疹與灌流不良；本題設定救護車已配置適用規格的腎上腺素注射筆。','四肢冰冷、哭聲變弱、低血壓惡化。','支持呼吸；EMT-2 確認適應症、器材規格及當地授權後協助施打腎上腺素注射筆，並依授權建立輸液路徑及快速後送。'),
+x('神經學','熱性痙攣','11 個月大高燒後全身抽搐。',['抽搐中','HR 178','RR 不規則','T 39.4°C','SpO₂ 89%'],['嗜睡','HR 146','RR 26','CRT 2 秒','SpO₂ 94%'],'抽搐已持續 4 分鐘，無外傷。','抽搐停止後處於 postictal，呼吸仍可維持。','保護呼吸道、給氧、測血糖與體溫、記錄抽搐時間並後送。'),
 x('循環','嬰兒敗血性休克','6 個月大發燒、活動力與尿量下降。',['嗜睡','HR 182','RR 48','T 39.1°C','SpO₂ 92%'],['反應差','HR 196','RR 32','CRT >5 秒','SpO₂ 86%'],'斑駁膚色、前囟略凹、餵食量下降。','末梢灌流與反應持續惡化。','PAT、給氧、保暖；EMT-2 依授權建立輸液路徑並快速後送。')],
 'infant-nontrauma-ohca':[
 x('呼吸道與呼吸','嬰兒異物梗塞轉 OHCA','9 個月大進食葡萄後無法哭泣。',['清醒焦躁','HR 168','RR 無效','CRT 2 秒','SpO₂ 80%'],['反應下降','HR 54','RR 0','CRT >5 秒','SpO₂ 58%'],'無有效咳嗽、無哭聲、胸部不起伏。','嚴重梗塞未解除後失去反應。','背擊胸推；失去反應後 CPR，每次開放氣道時檢視可見異物。','PEA／不建議電擊'),
-x('呼吸道與呼吸','細支氣管炎轉 OHCA','8 個月大喘兩天、活動力下降。',['哭聲弱','HR 168','RR 52','T 38.2°C','SpO₂ 87%'],['嗜睡','HR 62','RR 8 不規則','CRT >5 秒','SpO₂ 68%'],'明顯凹陷與 wheezing／crackles。','呼吸衰竭、心搏過緩後失去脈搏。','有效 BVM；給氧後 HR 仍低或無脈搏時進入嬰兒 CPR。','PEA／不建議電擊'),
-x('呼吸道與呼吸','嚴重哮吼轉 OHCA','16 個月大 stridor、犬吠咳嗽。',['焦躁','HR 172','RR 46','CRT 3 秒','SpO₂ 86%'],['無力','HR 58','RR 6','CRT >5 秒','SpO₂ 60%'],'休息時 stridor、嚴重胸凹。','氣流變小、呼吸停止與緩脈。','減少刺激、給氧與 BVM；無脈搏後依嬰兒 CPR／AED。','PEA／不建議電擊'),
-x('循環','嬰兒過敏性休克轉 PEA','10 個月大吃副食品後全身紅疹。',['有反應','HR 176','RR 42','BP 72/40','SpO₂ 90%'],['反應差','HR 72','RR 8','CRT >5 秒','SpO₂ 64%'],'臉唇腫脹、stridor、蕁麻疹。','呼吸循環快速惡化後無脈搏。','依資格處置過敏性休克；無脈搏後立即嬰兒 CPR／AED。','PEA／不建議電擊'),
-x('神經學','持續痙攣轉 OHCA','12 個月大持續全身抽搐。',['抽搐中','HR 190','RR 不規則','T 38.8°C','SpO₂ 82%'],['無反應','HR 48','RR 4','CRT >5 秒','SpO₂ 54%'],'抽搐超過 8 分鐘，分泌物多。','缺氧、呼吸停止後心率下降。','保護氣道、吸引與 BVM；無脈搏後進入嬰兒 CPR／AED。','Asystole／不建議電擊'),
+x('呼吸道與呼吸','細支氣管炎轉 OHCA','8 個月大喘兩天、活動力下降。',['哭聲弱','HR 168','RR 52','T 38.2°C','SpO₂ 87%'],['嗜睡','HR 62','RR 8 不規則','CRT >5 秒','SpO₂ 68%'],'明顯凹陷與 wheezing／crackles。','呼吸衰竭、心搏過緩後失去脈搏。','有效給氧與 BVM；若心率降至低於 60/min 且仍有心肺功能不良，立即開始嬰兒 CPR。','PEA／不建議電擊'),
+x('呼吸道與呼吸','嚴重哮吼轉 OHCA','11 個月大 stridor、犬吠咳嗽。',['焦躁','HR 172','RR 46','CRT 3 秒','SpO₂ 86%'],['無力','HR 58','RR 6','CRT >5 秒','SpO₂ 60%'],'休息時 stridor、嚴重胸凹。','氣流變小、呼吸停止與緩脈。','減少刺激、給氧與有效 BVM；若給氧通氣後 HR 仍低於 60/min 且有心肺功能不良，立即開始 CPR。','PEA／不建議電擊'),
+x('循環','嬰兒過敏性休克轉 PEA','10 個月大吃副食品後全身紅疹。',['有反應','HR 176','RR 42','BP 72/40','SpO₂ 90%'],['反應差','HR 72','RR 8','CRT >5 秒','SpO₂ 64%'],'臉唇腫脹、stridor、蕁麻疹；本題設定救護車已配置適用規格的腎上腺素注射筆。','呼吸循環快速惡化後無脈搏。','EMT-2 依教科書、器材配置及當地授權處置過敏性休克；無脈搏後立即嬰兒 CPR／AED。','PEA／不建議電擊'),
+x('神經學','持續痙攣轉 OHCA','11 個月大持續全身抽搐。',['抽搐中','HR 190','RR 不規則','T 38.8°C','SpO₂ 82%'],['無反應','HR 48','RR 4','CRT >5 秒','SpO₂ 54%'],'抽搐超過 8 分鐘，分泌物多。','缺氧、呼吸停止後心率下降。','保護氣道、吸引與有效 BVM；若給氧通氣後 HR 仍低於 60/min 且有心肺功能不良，立即開始 CPR。','Asystole／不建議電擊'),
 x('循環','心肌炎休克轉 OHCA','11 個月大感冒後極度倦怠、呼吸快。',['嗜睡','HR 188','RR 50','CRT 4 秒','SpO₂ 90%'],['反應差','HR 64','RR 10','CRT >5 秒','SpO₂ 66%'],'餵食差、膚色斑駁、肝緣增大。','心因性休克惡化為心搏過緩與無脈搏。','支持 ABC、避免延誤；無脈搏後依嬰兒 CPR／AED。','PEA／不建議電擊')],
 'infant-trauma-als':[
 x('大出血','頭皮撕裂傷','10 個月大撞破玻璃後頭皮大量出血。',['哭鬧','HR 170','RR 38','CRT 3 秒','SpO₂ 95%'],['嗜睡','HR 184','RR 32','CRT 4 秒','SpO₂ 92%'],'頭皮裂傷持續滲湧，無凹陷骨折觸感。','敷料浸濕、膚色變白。','直接加壓止血、避免壓迫疑凹陷骨折處、保暖並快速後送。'),
-x('大出血','前臂玻璃穿刺傷','15 個月大手臂遭玻璃割傷。',['哭鬧','HR 162','RR 34','CRT 2 秒','SpO₂ 98%'],['反應稍降','HR 178','RR 36','CRT 4 秒','SpO₂ 95%'],'前臂深層傷口持續出血，玻璃已脫落。','直接加壓後仍持續大量出血。','直接加壓；危及生命且無法控制時止血帶置於近心端並記時。'),
-x('呼吸道與呼吸','顏面犬咬傷','13 個月大遭犬咬臉部，口腔出血。',['哭聲沙啞','HR 168','RR 40','CRT 2 秒','SpO₂ 91%'],['嗜睡','HR 176','RR 22 弱','CRT 3 秒','SpO₂ 82%'],'臉頰裂傷、口內血液與腫脹。','分泌物增加、呼吸音變濕且血氧下降。','手動維持氣道、吸引、給氧與 BVM 準備，控制出血並快速後送。'),
+x('大出血','前臂玻璃穿刺傷','11 個月大手臂遭玻璃割傷。',['哭鬧','HR 162','RR 34','CRT 2 秒','SpO₂ 98%'],['反應稍降','HR 178','RR 36','CRT 4 秒','SpO₂ 95%'],'前臂深層傷口持續出血，玻璃已脫落。','直接加壓後仍持續大量出血。','直接加壓；危及生命且無法控制時止血帶置於近心端並記時。'),
+x('呼吸道與呼吸','顏面犬咬傷','11 個月大遭犬咬臉部，口腔出血。',['哭聲沙啞','HR 168','RR 40','CRT 2 秒','SpO₂ 91%'],['嗜睡','HR 176','RR 22 弱','CRT 3 秒','SpO₂ 82%'],'臉頰裂傷、口內血液與腫脹。','分泌物增加、呼吸音變濕且血氧下降。','手動維持氣道、吸引、給氧與 BVM 準備，控制出血並快速後送。'),
 x('呼吸道與呼吸','胸部壓砸傷','11 個月大遭重物壓到胸部。',['哭聲弱','HR 166','RR 46','CRT 3 秒','SpO₂ 88%'],['嗜睡','HR 132','RR 18','CRT 4 秒','SpO₂ 76%'],'右胸起伏小、肺音較弱。','呼吸作功轉為疲乏、血氧持續下降。','頸椎保護、給氧、BVM 輔助並快速送往創傷醫院。'),
 x('神經學','床面跌落頭部外傷','11 個月大跌落後嘔吐、嗜睡。',['嗜睡可喚醒','HR 156','RR 36','CRT 2 秒','SpO₂ 94%'],['反應下降','HR 96','RR 18 不規則','CRT 4 秒','SpO₂ 84%'],'額頭腫脹，初始瞳孔等大。','右側瞳孔變大、哭聲消失。','頸椎保護、連續神經評估、避免缺氧並快速後送。'),
 x('循環','車禍腹部鈍傷','9 個月大車禍後腹部瘀青。',['哭聲弱','HR 168','RR 42','CRT 3 秒','SpO₂ 93%'],['嗜睡','HR 188','RR 30','CRT >5 秒','SpO₂ 86%'],'下腹安全帶樣瘀痕、腹部稍膨隆。','膚色蒼白、肱動脈快弱。','PAT／XABCDE、輕柔腹部評估、給氧保暖並快速後送。')],
 'infant-trauma-ohca':[
 x('大出血','車禍腹腔出血轉 PEA','9 個月大車禍後腹脹、膚色蒼白。',['哭聲弱','HR 172','RR 42','CRT 4 秒','SpO₂ 92%'],['反應差','HR 72','RR 8','CRT >5 秒','SpO₂ 64%'],'安全座椅固定不當，腹部瘀青膨隆。','出血性休克失代償後無脈搏。','XABCDE、保暖與快速後送；失去脈搏後嬰兒 CPR／AED。','PEA／不建議電擊'),
 x('大出血','頭皮大量出血轉 PEA','8 個月大玻璃割傷頭皮，持續出血。',['哭聲弱','HR 184','RR 44','CRT 4 秒','SpO₂ 93%'],['無力','HR 62','RR 8','CRT >5 秒','SpO₂ 62%'],'大片頭皮撕裂傷，直接加壓不足。','出血性休克造成緩脈與失去反應。','有效直接加壓、保暖；無脈搏後嬰兒 CPR／AED。','PEA／不建議電擊'),
-x('呼吸道與呼吸','顏面創傷窒息轉 OHCA','12 個月大臉部撞擊後口鼻大量出血。',['哭聲微弱','HR 176','RR 38','CRT 3 秒','SpO₂ 82%'],['無反應','HR 48','RR 4','CRT >5 秒','SpO₂ 52%'],'口腔血塊與分泌物造成氣道阻塞。','缺氧、呼吸停止後心搏過緩。','頸椎保護、吸引與 BVM；無脈搏後嬰兒 CPR。','PEA／不建議電擊'),
-x('呼吸道與呼吸','胸部壓砸轉 PEA','10 個月大被家具壓住胸部後救出。',['嗜睡','HR 164','RR 48','CRT 3 秒','SpO₂ 84%'],['無力','HR 56','RR 6','CRT >5 秒','SpO₂ 58%'],'單側胸廓起伏小、呼吸音下降。','呼吸循環衰竭後失去脈搏。','給氧與有效 BVM、快速後送；OHCA 後嬰兒 CPR／AED。','PEA／不建議電擊'),
-x('神經學','高處跌落腦傷轉 OHCA','11 個月大自樓梯跌落後意識下降。',['嗜睡','HR 142','RR 32','CRT 3 秒','SpO₂ 91%'],['無反應','HR 44','RR 4 不規則','CRT >5 秒','SpO₂ 50%'],'後枕腫脹、瞳孔不等大。','呼吸停止、嚴重緩脈後無脈搏。','頸椎保護與有效 BVM；無脈搏後依嬰兒 CPR／AED。','Asystole／不建議電擊'),
-x('循環','行人遭撞多重創傷轉 PEA','18 個月大遭車輛撞擊後反應變差。',['哭聲弱','HR 178','RR 40','CRT 4 秒','SpO₂ 88%'],['無力','HR 66','RR 8','CRT >5 秒','SpO₂ 60%'],'胸腹瘀傷、骨盆不穩定疑多處內出血。','出血與呼吸衰竭合併惡化。','XABCDE、頸椎與骨盆保護、給氧保暖；OHCA 後嬰兒 CPR。','PEA／不建議電擊')]
+x('呼吸道與呼吸','顏面創傷窒息轉 OHCA','11 個月大臉部撞擊後口鼻大量出血。',['哭聲微弱','HR 176','RR 38','CRT 3 秒','SpO₂ 82%'],['無反應','HR 48','RR 4','CRT >5 秒','SpO₂ 52%'],'口腔血塊與分泌物造成氣道阻塞。','缺氧、呼吸停止後心搏過緩。','頸椎保護、吸引與有效 BVM；若給氧通氣後 HR 仍低於 60/min 且有心肺功能不良，立即開始 CPR。','PEA／不建議電擊'),
+x('呼吸道與呼吸','胸部壓砸轉 PEA','10 個月大被家具壓住胸部後救出。',['嗜睡','HR 164','RR 48','CRT 3 秒','SpO₂ 84%'],['無力','HR 56','RR 6','CRT >5 秒','SpO₂ 58%'],'單側胸廓起伏小、呼吸音下降。','呼吸循環衰竭，心率降至 56/min 且灌流不良。','給氧與有效 BVM；若有效給氧通氣後 HR 仍低於 60/min 且有心肺功能不良，立即開始 CPR，同時快速後送。','PEA／不建議電擊'),
+x('神經學','高處跌落腦傷轉 OHCA','11 個月大自樓梯跌落後意識下降。',['嗜睡','HR 142','RR 32','CRT 3 秒','SpO₂ 91%'],['無反應','HR 44','RR 4 不規則','CRT >5 秒','SpO₂ 50%'],'後枕腫脹、瞳孔不等大。','呼吸停止、嚴重緩脈且灌流不良。','頸椎保護與有效 BVM；若有效給氧通氣後 HR 仍低於 60/min 且有心肺功能不良，立即開始 CPR。','Asystole／不建議電擊'),
+x('循環','行人遭撞多重創傷轉 PEA','11 個月大遭車輛撞擊後反應變差。',['哭聲弱','HR 178','RR 40','CRT 4 秒','SpO₂ 88%'],['無力','HR 66','RR 8','CRT >5 秒','SpO₂ 60%'],'胸腹瘀傷、骨盆不穩定疑多處內出血。','出血與呼吸衰竭合併惡化。','XABCDE、頸椎與骨盆保護、給氧保暖；失去脈搏後進入 OHCA 流程。','PEA／不建議電擊')]
 };
 
 const standards={
 '大出血':['依 XABCDE 優先辨識並控制致命性外出血','先以直接加壓止血；危及生命且無法控制時使用止血帶','止血帶置於傷口近心端約 5–8 cm、避開關節並記錄時間','持續重評出血、遠端循環、意識與灌流','適當暴露後立即覆蓋保暖，預防失溫','嚴重創傷不延誤現場時間，儘速送往適當醫院'],
 '呼吸道與呼吸':['評估氣道通暢、呼吸頻率、作功、胸廓起伏、肺音與 SpO₂','依病況維持呼吸道並使用適當氧氣設備','無適當呼吸時，以合適面罩及 EC 手勢執行 BVM','每次通氣至少 1 秒至可見胸部升起，避免過度通氣','持續重評意識、呼吸品質、心率與血氧','危急呼吸個案應快速後送並預先通報'],
-'循環':['評估脈搏、膚色、溫度、CRT、血壓與意識','尋找休克原因並依 XABCDE／初級評估處理可逆因素','監測心律、SpO₂ 與連續生命徵象；必要時完成十二導程（EMT-2）','依病況給氧；EMT-2 進階技術須依資格、授權與醫療指導','預防失溫並持續評估處置反應','不穩定循環個案應快速後送與預先通報'],
+'循環':['評估脈搏、膚色、溫度、CRT、血壓與意識','尋找休克原因並依 XABCDE／初級評估處理可逆因素','監測心律、SpO₂ 與連續生命徵象；必要時依現行資格及當地指引完成十二導程','依病況給氧；EMT-2 進階技術須依資格、授權與醫療指導','預防失溫並持續評估處置反應','不穩定循環個案應快速後送與預先通報'],
 '神經學':['先確保氣道、呼吸與循環，避免低血氧與低血壓','評估 AVPU／GCS、瞳孔、肢體活動與血糖','確認症狀發作或最後正常時間及相關病史','創傷機轉應考量頸椎保護並連續重評神經變化','依病況給氧與通氣，避免非必要過度通氣','快速送往適當醫院並預先通報']};
 
-function makeCases(){const out=[];Object.entries(libraries).forEach(([key,list])=>{const [age,trauma,mode]=key.split('-');list.forEach((b,n)=>{const isInfant=age==='infant',isOHCA=mode==='ohca';const stages=[{name:'0:00–1:30 初始評估',v:b.initial,scene:b.dispatch,ask:b.problem},{name:isOHCA?'評估中惡化':'病況惡化',v:b.mid,scene:b.danger,ask:b.action}];if(isOHCA)stages.push({name:'OHCA 轉折',v:['無反應','無脈搏','無正常呼吸','BP —','SpO₂ —'],scene:`患者${isInfant?'／嬰兒':''}失去反應，無正常呼吸，10 秒內無法確認脈搏。`,ask:`AED 分析：${b.rhythm}。立即切換至${isInfant?'嬰兒':'成人'} OHCA 流程。`,critical:true});else stages.push({name:'ALS 處置與後送',v:b.mid,scene:'患者仍有生命徵象，但屬危急個案；應完成關鍵處置後立即後送。',ask:b.action});out.push({...b,age,trauma,mode,index:n,type:`${age==='adult'?'成人':'嬰兒'}｜${trauma==='trauma'?'創傷':'非創傷'}｜${mode.toUpperCase()}｜${b.category}`,stages,standard:[...standards[b.category],...(isOHCA?[`${isInfant?'嬰兒':'成人'} OHCA：高品質 CPR、AED 與最少中斷`]:['依 EMT 層級、當地指引及醫療指導完成 ALS 處置'])],pages:'消防署《2025 救護技術員教科書》及《教學用緊急醫療救護單項技術操作手冊》'});});});return out}
+function makeCases(){const out=[];Object.entries(libraries).forEach(([key,list])=>{const [age,trauma,mode]=key.split('-');list.forEach((b,n)=>{const isInfant=age==='infant',isOHCA=mode==='ohca';const stages=[{name:'初始評估',v:b.initial,scene:b.dispatch,ask:b.problem},{name:isOHCA?'評估中惡化':'病況惡化',v:b.mid,scene:b.danger,ask:b.action}];if(isOHCA)stages.push({name:'轉入 OHCA 流程',v:['無反應','無脈搏','無正常呼吸','BP —','SpO₂ —'],scene:isInfant?'嬰兒失去反應且無正常呼吸；立即在 10 秒內評估肱動脈搏。若有效給氧與通氣後 HR 仍低於 60/min 且有心肺功能不良，應在脈搏完全消失前開始 CPR；之後依腳本轉為無脈搏。':'患者失去反應、無正常呼吸，10 秒內無法確認頸動脈搏。',ask:`AED 語音：「${b.rhythm.includes('建議電擊')&&!b.rhythm.includes('不建議')?'建議電擊':'不建議電擊'}。」${b.rhythm.split('／')[0]}僅供裁判掌握，不由 AED 宣讀。`,critical:true});else stages.push({name:'有生命徵象處置與後送',v:b.mid,scene:'患者仍有生命徵象但屬危急個案；完成適用的關鍵處置後立即後送。',ask:b.action});out.push({...b,age,trauma,mode,index:n,type:`${age==='adult'?'成人':'嬰兒'}｜${trauma==='trauma'?'創傷':'非創傷'}｜${isOHCA?'評估中轉 OHCA':'有生命徵象'}｜${b.category}`,stages,standard:[...standards[b.category],...(isOHCA?[`${isInfant?'嬰兒':'成人'} OHCA：高品質 CPR、AED 與最少中斷`]:['依 EMT 層級、當地指引及醫療指導完成適用處置'])],pages:'消防署《2025 救護技術員教科書》及《教學用緊急醫療救護單項技術操作手冊》'});});});return out}
 const cases=makeCases();
 
 const focusItems={
@@ -152,31 +154,188 @@ const focusItems={
 '呼吸道與呼吸':['評估氣道聲音','測量呼吸速率','評估呼吸品質','觀察呼吸作功','觀察胸廓起伏','聽診雙側肺音','測量 SpO₂','辨識呼吸衰竭'],
 '循環':['測量心率','評估脈搏品質','測量血壓','評估皮膚循環','評估 CRT','監測心律','辨識休克類型','評估處置反應'],
 '神經學':['評估 AVPU／GCS','分別評估雙側瞳孔','評估肢體活動','測量血糖','確認發作／最後正常時間','詢問相關病史','重新評估神經變化','辨識危急神經徵象']};
-function rubric(c){const infant=c.age==='infant';const primary=infant?['完成 PAT 外觀評估','完成 PAT 呼吸作功評估','完成 PAT 皮膚循環評估','檢查致命性出血','評估呼吸道','評估呼吸','觸摸肱動脈搏','評估皮膚循環','評估意識','適當暴露並保暖']:['檢查致命性出血','評估意識','評估呼吸道','考量頸椎保護','測量呼吸速率','評估呼吸品質','觸摸橈動脈搏','評估皮膚循環','評估神經狀態','適當暴露並保暖'];const intervention=c.category==='大出血'?['選擇正確止血方式','正確放置止血器材','確認出血已控制','保護傷口／異物','維持體溫','決定快速後送']:c.category==='呼吸道與呼吸'?['採取適當呼吸道姿勢','選擇適當氧氣設備','選擇適當面罩尺寸','使用 EC 手勢密合','每次通氣可見胸升','決定快速後送']:c.category==='循環'?['採取適當姿勢','選擇適當氧氣處置','建立必要監測','辨識可逆病因','依資格執行進階處置','決定快速後送']:['維持呼吸道與給氧','執行必要頸椎保護','完成神經學篩檢','避免低血氧／低血壓','確認關鍵時間資訊','決定快速後送'];const outcome=c.mode==='ohca'?(infant?['10 秒內確認無正常呼吸／無脈搏','立即開始 CPR','按壓位置正確','兩人採兩手環抱法','深度約 4 cm／胸廓前後徑 1/3','速率 100–120 次／分','兩人按壓通氣比 15:2','開啟 AED','正確使用兒童貼片','分析時確認無人接觸','依 AED 指示處置','分析後立即恢復按壓']:['10 秒內確認無正常呼吸／無脈搏','立即開始 CPR','掌根置於胸骨下半部','按壓速率 100–120 次／分','按壓深度 5–6 cm','每次完全回彈','按壓通氣比 30:2','開啟 AED','正確貼妥貼片','分析時確認無人接觸','依 AED 指示處置','分析後立即恢復按壓']):['正確辨識危急個案','說出最可能病因','完成關鍵 ALS 處置','確認處置資格與授權','持續監測生命徵象','重新評估處置反應','及早決定後送醫院','完成醫院預先通報'];return [
-['現場準備',[['自我介紹',2],['確認現場安全',2],['穿戴適當 PPE',2],['器材放置適當位置',2]]],
-['初級評估',primary.map(v=>[v,2])],
-['重點評估',focusItems[c.category].map(v=>[v,2])],
-['關鍵處置',intervention.map(v=>[v,3])],
-['持續評估',[['重新評估意識',2],['重新評估呼吸',2],['重新評估脈搏',2],['重新測量生命徵象',2],['辨識病況惡化',2]]],
-[c.mode==='ohca'?'OHCA 處置':'ALS 處置與後送',outcome.map(v=>[v,c.mode==='ohca'?2:3])],
-['團隊表現',[['明確分工',2],['使用閉環溝通',2]]]
-]}
+function clinicalProfile(c){
+ const t=c.title,infant=c.age==='infant',ohca=c.mode==='ohca';
+ const p={
+  scope:'EMT-1／EMT-2',
+  source:`《2025 救護技術員教科書》：${c.category}相關章節｜《教學用緊急醫療救護單項技術操作手冊》：評估、氧療、通氣與後送相關單項`,
+  focus:[...focusItems[c.category]],
+  interventions:c.category==='大出血'?['直接加壓主要出血處','依傷口位置選擇適當止血方式','確認止血後無持續出血','保護傷口及留置異物','覆蓋保暖預防失溫','不延誤快速後送']:c.category==='呼吸道與呼吸'?['採取適當氣道姿勢','依病況選擇氧氣設備','呼吸不足時準備適當大小 BVM','面罩密合且通氣可見胸升','持續重評呼吸與 SpO₂','不延誤快速後送']:c.category==='循環'?['採取適當姿勢並減少耗氧','依病況選擇氧氣處置','建立必要生理監測','處理可逆原因','依資格執行授權技術','不延誤快速後送']:['維持氣道與適當氧合','完成必要神經學評估','創傷時維持頸椎保護','避免低血氧與低血壓','記錄發作及變化時間','不延誤快速後送'],
+  errors:['延遲辨識危急狀態','執行不符合傷病機轉的處置','處置後未重新評估'],
+  response:'正確處置後，病況可短暫穩定；裁判仍依本題預設時序提供下一階段資料。'
+ };
+ if(/異物梗塞/.test(t)){const partial=/部分/.test(t);p.focus=['確認能否咳嗽、發聲及呼吸','判斷部分或嚴重氣道梗塞','觀察胸廓是否有效起伏','評估意識變化','監測呼吸品質','監測心率與脈搏','監測 SpO₂','持續確認異物是否排出'];p.interventions=infant?(partial?['有效咳嗽時不干擾','持續觀察哭聲與氣流','轉為嚴重梗塞時執行 5 次背擊','交替執行 5 次胸部推擠','每組處置後重新確認氣流','快速後送並備妥 CPR／AED']:['立即執行 5 次背擊','交替執行 5 次胸部推擠','每組處置後重新確認氣流','失去反應後開始 CPR','開放氣道時只移除可見異物','啟用 AED 並依語音處置']):(partial?['鼓勵患者持續有效咳嗽','不進行盲目手指挖取','轉為嚴重梗塞時立即介入','依成人嚴重梗塞流程操作','失去反應後開始 CPR','備妥 AED 並快速後送']:['立即依成人嚴重梗塞流程操作','持續確認異物是否排出','失去反應後開始 CPR','開放氣道時只移除可見異物','啟用 AED 並依語音處置','持續有效通氣與快速後送']);p.errors=infant?['對嬰兒執行腹部推擠','盲目以手指挖取異物','有有效咳嗽時不當拍擊或推擠']:['盲目以手指挖取異物','延遲處理嚴重氣道梗塞','失去反應後仍持續站立式處置'];p.source='《2025 救護技術員教科書》：呼吸道異物梗塞｜《單項技術操作手冊》：成人／嬰兒呼吸道異物排除與 CPR';}
+ else if(/氣喘/.test(t)){p.focus=['詢問氣喘病史與本次發作時間','確認吸入劑種類及已使用次數','評估說話能力','評估輔助呼吸肌使用','聽診雙側肺音','辨識喘鳴減弱或 silent chest','監測 SpO₂','監測意識與疲乏'];p.interventions=['採坐姿或舒適姿勢','依低血氧狀況給氧','EMT-2依條件協助自備支氣管擴張劑','呼吸不足時立即 BVM','確認通氣可見胸廓起伏','快速後送並預先通報'];p.scope='EMT-1基本支持｜支氣管擴張劑標示 EMT-2';p.errors=['把 silent chest 誤判為改善','呼吸不足時延遲 BVM','未確認自備藥物及協助使用條件'];p.source='《2025 救護技術員教科書》：氣喘與呼吸衰竭｜《單項技術操作手冊》：氧療、BVM、協助吸入型支氣管擴張劑';}
+ else if(/冠心症/.test(t)){p.focus=['完成 OPQRST 疼痛評估','確認症狀發作時間','詢問過敏史','詢問用藥及抗凝血／抗血小板史','詢問心血管相關病史','評估疼痛轉移與伴隨症狀','監測血壓與心律','取得十二導程心電圖並依指引處理'];p.interventions=['採舒適姿勢並減少活動','依低血氧狀況決定氧療','完成心電圖監測','辨識不穩定徵象','依資格與當地指引協助授權處置','快速後送並完成心導管醫院通報'];p.scope='EMT-1監測與十二導程｜藥物協助依 EMT-2資格及當地指引';p.errors=['未取得心電圖即直接定義 STEMI','未核對血壓與禁忌即協助藥物','忽略胸痛患者突然失去反應'];p.source='《2025 救護技術員教科書》：急性冠心症｜《單項技術操作手冊》：十二導程心電圖、氧療、AED／CPR';}
+ else if(/過敏/.test(t)){p.focus=['確認可能過敏原與接觸時間','檢查皮膚及黏膜症狀','辨識 stridor 或 wheezing','評估呼吸作功','監測 SpO₂','評估血壓與 CRT','評估意識變化','辨識過敏性休克'];p.interventions=['立即支持氣道與呼吸','依低血氧狀況給氧','備妥 BVM 與抽吸設備','EMT-2確認適應症及救護車配置後協助施打腎上腺素注射筆','EMT-2依授權建立輸液路徑','快速後送並預先通報'];p.scope='EMT-1基本支持｜腎上腺素注射筆與輸液標示 EMT-2，並須符合教科書、救護車配置及當地授權';p.errors=['只處理皮疹而忽略氣道或休克','符合條件且已有器材時延遲協助施打','未持續重評氣道腫脹與灌流'];p.source='《2025 救護技術員教科書》第7章，電子書頁231：過敏性休克與腎上腺素注射筆｜《單項技術操作手冊》：氧療、BVM、腎上腺素注射筆、周邊輸液';}
+ else if(/中風/.test(t)){p.focus=['確認最後正常時間','執行當地指定中風量表','評估臉部不對稱','評估雙側上肢肌力','評估語言異常','測量血糖排除低血糖','評估抗凝血用藥史','持續評估意識與神經變化'];p.interventions=['維持氣道並依需要給氧','測量並記錄血糖','記錄最後正常時間與量表結果','避免未授權常規降壓','選擇適當中風責任醫院','快速後送並啟動中風通報'];p.errors=['未確認最後正常時間','未測血糖即判定中風','未依當地指引選擇送醫醫院'];p.source='《2025 救護技術員教科書》：腦中風｜《單項技術操作手冊》：神經評估、血糖監測、送醫通報';}
+ else if(/敗血/.test(t)){p.focus=['確認感染症狀與病程','測量體溫','評估意識','評估呼吸頻率與作功','監測血壓或肱動脈脈搏','評估 CRT 與皮膚灌流','詢問尿量與進食狀況','辨識感染合併休克'];p.interventions=['維持氣道與適當氧合','持續監測灌流','保暖並避免失溫','EMT-2依授權建立輸液路徑','每次處置後重新評估','快速後送並通報疑似敗血症'];p.scope='EMT-1基本支持｜輸液路徑及輸液標示 EMT-2';p.errors=['將發燒合併休克誤判為單純感染','輸液後未重新評估','延誤送醫進行非必要現場處置'];p.source='《2025 救護技術員教科書》：感染、敗血症與休克｜《單項技術操作手冊》：氧療、監測、周邊輸液';}
+ else if(/肺栓塞/.test(t)){p.focus=['確認呼吸困難發作方式','詢問胸痛及暈厥','詢問近期手術或臥床','比較雙側下肢腫脹','評估呼吸品質','監測 SpO₂','監測血壓及灌流','辨識阻塞性休克'];p.interventions=['減少活動並採舒適姿勢','依低血氧狀況給氧','呼吸不足時 BVM','建立心律與生命徵象監測','及早辨識 PEA 風險','快速後送並預先通報'];p.errors=['鼓勵患者步行移動','忽略近期手術或單側腿腫','低血氧且呼吸不足時延遲通氣'];p.source='《2025 救護技術員教科書》第7章：呼吸困難、胸痛與休克｜《單項技術操作手冊》：氧療、BVM、生命徵象與心電圖監測';}
+ else if(/壓砸傷高血鉀/.test(t)){p.focus=['確認受壓時間與解除經過','評估受壓肢體腫脹與循環','確認解除前是否已有救護準備','監測心率與脈搏','辨識寬 QRS 或高尖 T 波','監測血壓與灌流','評估意識與呼吸','辨識解除後高血鉀惡化'];p.interventions=['維持氣道與適當氧合','建立心律及連續生命徵象監測','確認解除壓迫時間','EMT-2依授權建立輸液路徑','聯繫醫療指導並立即後送','失去脈搏時立即 CPR／AED'];p.scope='EMT-1基本支持｜輸液依 EMT-2資格；其他藥物不列入 EMT-1／2必做';p.errors=['未持續監測解除壓迫後心律','把未授權藥物列為 EMT-1／2必做','為非必要處置延誤後送'];p.source='《2025 救護技術員教科書》第8章：壓砸傷與特殊創傷｜《單項技術操作手冊》：心電圖監測、氧療、周邊輸液、CPR／AED';}
+ else if(/高血鉀/.test(t)){p.focus=['確認腎臟病與透析病史','確認最後一次透析時間','詢問近期飲食、藥物與全身無力','監測心率與脈搏','辨識寬 QRS 或高尖 T 波','監測血壓與灌流','評估意識與呼吸','辨識高血鉀惡化風險'];p.interventions=['維持氣道與適當氧合','建立心律及連續生命徵象監測','確認透析與用藥資訊','EMT-2依授權建立輸液路徑','聯繫醫療指導並立即後送','失去脈搏時立即 CPR／AED'];p.scope='EMT-1基本支持｜輸液依 EMT-2資格；其他藥物不列入 EMT-1／2必做';p.errors=['未監測心律即忽略致命性緩脈','把未授權藥物列為 EMT-1／2必做','為非必要處置延誤後送'];p.source='《2025 救護技術員教科書》第7章：電解質異常與心搏過緩｜《單項技術操作手冊》：心電圖監測、氧療、周邊輸液、CPR／AED';}
+ else if(/槍傷|股骨|頭皮|前臂|腹股溝/.test(t)){p.focus=['確認主要出血位置','辨識噴湧或持續大量出血','立即評估直接加壓效果','評估傷口能否使用止血帶','評估是否需要傷口填塞','評估遠端脈搏與皮膚循環','監測休克徵象','止血後持續重評'];p.interventions=/腹股溝/.test(t)?['立即填塞接合處傷口','對填塞處持續直接加壓','確認一般肢體止血帶不適用','確認出血已受控制','保暖預防失溫','快速後送創傷醫院']:/頭皮/.test(t)?['對出血處持續直接加壓','疑凹陷性骨折處避免直接重壓','以適當敷料覆蓋固定','敷料滲透時加敷不移除原敷料','保暖預防失溫','快速後送創傷醫院']:['立即直接加壓','危及生命且無法控制時使用止血帶','止血帶置於合適近心端並避開關節','束緊至出血停止並記時','重新確認出血及遠端循環','保暖並快速後送'];p.errors=/腹股溝/.test(t)?['將一般肢體止血帶套在腹股溝','傷口填塞後未持續加壓','出血未控制仍延誤後送']:['止血帶放在關節上','止血帶未束緊至出血停止','已有效止血後任意鬆開止血帶'];p.source='《2025 救護技術員教科書》：外出血與休克｜《單項技術操作手冊》：直接加壓、傷口填塞、止血帶';}
+ else if(/腹部刀傷|心前區刀傷/.test(t)){p.focus=['確認穿刺物位置與穩定性','檢查出入口傷口','評估外出血','評估胸腹部起伏與觸診發現','監測脈搏與血壓','評估膚色與 CRT','辨識內出血或阻塞性休克','持續重評意識與呼吸'];p.interventions=['不得拔除留置異物','以敷料穩定異物','控制周邊可見出血','支持氣道與呼吸','保暖預防失溫','立即快速後送創傷醫院'];p.errors=['拔除留置異物','直接壓迫突出異物本體','為完成非必要處置延誤後送'];p.source='《2025 救護技術員教科書》第8章、電子書頁261：穿刺傷與留置異物｜《單項技術操作手冊》：傷口處理、氧療、創傷評估與搬運';}
+ else if(/骨盆|腹腔出血|腹部鈍傷|多重創傷/.test(t)){p.focus=['確認高能量受傷機轉','檢查致命性外出血','視診腹部或骨盆異常','僅進行必要且輕柔的觸診','評估脈搏與皮膚灌流','監測意識與呼吸','辨識隱性大出血','持續重評休克進展'];p.interventions=['依機轉實施脊椎動作限制','疑骨盆傷時依指引固定骨盆','避免反覆搖動或深壓骨盆腹部','給氧並備妥 BVM','覆蓋保暖預防失溫','立即快速後送創傷醫院'];p.errors=['反覆擠壓骨盆確認穩定度','將無外出血誤判為無大出血','延誤嚴重內出血患者後送'];p.source='《2025 救護技術員教科書》第8、9章：骨盆／腹部創傷、內出血與小兒創傷｜《單項技術操作手冊》：XABCDE、脊椎動作限制、骨盆固定、保暖與搬運';}
+ else if(/連枷胸|張力性氣胸|胸部壓砸/.test(t)){p.focus=['視診雙側胸廓起伏','觸診胸部壓痛或不穩定','分別聽診雙側肺音','評估呼吸速率與品質','評估頸靜脈及休克表現','監測 SpO₂','辨識呼吸衰竭','持續重評阻塞性休克'];p.interventions=['維持頸椎保護','依低血氧狀況給氧','呼吸不足時立即 BVM','每次通氣確認胸廓起伏','持續重評單側呼吸音與灌流','立即快速後送創傷醫院'];p.errors=['未比較雙側肺音','將侵入性胸腔減壓列為 EMT-1／2必做','呼吸不足時延遲 BVM'];p.scope='EMT-1／2支持性處置；侵入性胸腔減壓僅列資格提醒，不列正向操作得分';p.source='《2025 救護技術員教科書》第8章：胸部創傷｜《單項技術操作手冊》：創傷評估、氧療、BVM、搬運後送';}
+ else if(/頭部外傷|腦傷|床面跌落|高處跌落/.test(t)){p.focus=['確認受傷機轉與時間','連續評估 GCS／AVPU','分別檢查雙側瞳孔','評估四肢活動','詢問嘔吐或抽搐','監測呼吸型態','監測血壓與灌流','辨識顱內壓升高徵象'];p.interventions=['維持頸椎保護','保持氣道通暢','避免低血氧','避免低血壓','呼吸不足時適當 BVM','快速後送適當創傷醫院'];p.errors=['只因血壓偏高而延誤後送','未重評瞳孔與意識變化','不必要過度通氣'];p.source='《2025 救護技術員教科書》第8、9章：頭部外傷、神經評估與小兒創傷｜《單項技術操作手冊》：GCS／AVPU、瞳孔、脊椎動作限制、BVM與搬運';}
+ else if(/神經性休克/.test(t)){p.focus=['確認頸部受傷機轉','評估頸痛與四肢感覺','評估四肢肌力','維持完整脊椎動作限制','監測心率與血壓','評估皮膚溫度與乾濕','區辨神經性與出血性休克','持續重評呼吸功能'];p.interventions=['維持頸椎與脊椎動作限制','維持氣道與適當氧合','持續心律及生命徵象監測','覆蓋保暖','EMT-2依授權建立輸液路徑','快速後送適當醫院'];p.scope='EMT-1基本支持｜輸液標示 EMT-2';p.errors=['只因皮膚溫暖而排除休克','忽略合併出血性休克可能','未維持頸椎保護即搬動'];p.source='《2025 救護技術員教科書》第8章：脊椎損傷與神經性休克｜《單項技術操作手冊》：脊椎動作限制、氧療、監測、周邊輸液與搬運';}
+ else if(/哮吼/.test(t)){p.focus=['觀察犬吠樣咳嗽','辨識吸氣性喘鳴','確認休息時是否仍有 stridor','評估胸骨上及肋間凹陷','評估哭聲與外觀','監測呼吸速率與品質','監測 SpO₂','辨識疲乏與呼吸衰竭'];p.interventions=['減少不必要刺激','允許維持舒適姿勢','依低血氧狀況給氧','備妥適當大小 BVM','呼吸不足時有效通氣','快速後送並預先通報'];p.errors=['強迫平躺造成躁動惡化','反覆刺激咽喉檢查','氣流變小時誤判為改善'];p.source='《2025 救護技術員教科書》第9章：小兒上呼吸道阻塞與呼吸衰竭｜《單項技術操作手冊》：PAT、氧療、嬰兒BVM與搬運';}
+ else if(/細支氣管炎/.test(t)){p.focus=['確認病程與餵食量','評估鼻翼搧動與胸凹','聽診雙側肺音','評估呼吸速率與品質','監測 SpO₂','監測心率由快轉慢','評估哭聲與反應','辨識呼吸衰竭'];p.interventions=['維持適當氣道姿勢','依需要清除可見分泌物','依低血氧狀況給氧','呼吸不足時有效 BVM','通氣後立即重評心率','快速後送並預先通報'];p.errors=['將心率下降誤判為改善','呼吸不足時只給氧不通氣','過度刺激增加耗氧'];p.source='《2025 救護技術員教科書》第9章：小兒下呼吸道疾病與呼吸衰竭｜《單項技術操作手冊》：PAT、抽吸、氧療、嬰兒BVM與搬運';}
+ else if(/痙攣/.test(t)){p.focus=['記錄抽搐開始與持續時間','觀察抽搐型態','保護患者避免二次傷害','評估氣道與分泌物','監測呼吸品質與 SpO₂','測量血糖','測量體溫','評估抽搐後意識'];p.interventions=['移除周邊危險物品','維持氣道並適當抽吸','依低血氧狀況給氧','呼吸不足時有效 BVM','不強行壓制或塞物入口','快速後送並通報持續痙攣'];p.errors=['強行壓制抽搐肢體','將物品塞入口中','抽搐停止後未重新評估呼吸'];p.source='《2025 救護技術員教科書》第7、9章：痙攣與小兒神經急症｜《單項技術操作手冊》：血糖、抽吸、氧療、嬰兒BVM與搬運';}
+ else if(/心肌炎/.test(t)){p.focus=['確認近期感染症狀','詢問餵食與活動力變化','評估呼吸作功','監測心率與心律','評估肱動脈品質','評估 CRT 與膚色','觀察肝緣或水腫線索','辨識心因性休克'];p.interventions=['減少刺激與耗氧','維持氣道與適當氧合','呼吸不足時有效 BVM','持續心律與生命徵象監測','避免無指引的大量快速輸液','快速後送並預先通報'];p.errors=['忽略心因性休克而大量快速輸液','心率下降時誤判為改善','延遲處理呼吸不足'];p.source='《2025 救護技術員教科書》第7、9章：心因性休克與小兒循環急症｜《單項技術操作手冊》：PAT、氧療、BVM、心電圖與生命徵象監測';}
+ else if(/顏面犬咬|顏面創傷/.test(t)){p.focus=['評估口鼻出血與分泌物','確認氣道是否通暢','觀察胸廓起伏','評估呼吸速率與品質','監測 SpO₂','評估臉部腫脹','控制可見外出血','持續重評阻塞情形'];p.interventions=['維持頸椎保護','以抽吸清除血液與分泌物','手動維持氣道','依需要給氧','呼吸不足時有效 BVM','控制外出血並快速後送'];p.errors=['盲目挖取口腔血塊','只包紮傷口而忽略氣道','呼吸不足時延遲抽吸與通氣'];p.source='《2025 救護技術員教科書》第8、9章：顏面創傷、氣道與小兒創傷｜《單項技術操作手冊》：抽吸、氣道維持、氧療、嬰兒BVM與止血';}
+ if(/頭皮/.test(t)){p.focus=['確認頭皮主要出血位置','評估是否疑似凹陷性骨折','立即評估直接加壓效果','觀察敷料是否持續浸透','監測意識與瞳孔','監測心率與肱動脈品質','評估 CRT 與膚色','持續重評休克進展'];p.errors=['直接重壓疑似凹陷性骨折處','敷料浸透後移除原敷料造成血塊破壞','只處理傷口而未重評意識與休克'];p.source='《2025 救護技術員教科書》第5、8章：頭部傷口、止血與頭部創傷｜《單項技術操作手冊》：直接加壓、傷口覆蓋、創傷評估';}
+ if(/腹部鈍傷|腹腔出血/.test(t)){p.focus=['確認碰撞機轉與安全座椅固定','檢查致命性外出血','視診腹部瘀傷與膨隆','僅進行必要且輕柔的腹部觸診','評估肱動脈品質','評估 CRT 與膚色','辨識腹腔內出血','持續重評意識與呼吸'];p.interventions=['依機轉實施脊椎動作限制','避免反覆或深壓腹部','維持氣道與適當氧合','呼吸不足時備妥 BVM','覆蓋保暖預防失溫','立即快速後送創傷醫院'];p.errors=['反覆深壓腹部','將無外出血誤判為無大出血','延誤疑似腹腔內出血患者後送'];p.source='《2025 救護技術員教科書》第8、9章：腹部創傷、嬰兒創傷與休克｜《單項技術操作手冊》：創傷評估、氧療、保暖與搬運';}
+ if(ohca){p.response='正確前段處置可暫時改善或延緩惡化；本題為固定「先有生命徵象、評估中轉 OHCA」腳本，裁判依設定進入轉折。';}
+ return p;
+}
+
+function judgeScript(c,p){
+ const t=c.title,infant=c.age==='infant';
+ let opening=infant?'家屬：「他和平常不一樣，越來越沒有精神，請快點幫他。」':'患者：「我很不舒服，症狀越來越嚴重。」';
+ let history=`固定病史回答：${c.problem} 未特別列出的 SAMPLE 項目回答「現場無法取得或家屬不清楚」，不得由裁判臨時增加會影響判斷的新資訊。`;
+ if(/冠心症/.test(t)){opening='患者：「胸口一直像被重物壓住，還會冒冷汗。」';history='OPQRST：胸骨後重壓感，延伸左肩及下巴，休息未改善；SAMPLE：高血壓、糖尿病，無已知藥物過敏。藥物是否可協助使用，必須依題目提供的自備藥物、生命徵象與禁忌判斷。';}
+ else if(/氣喘/.test(t)){opening='患者：「吸不到氣……吸入劑用了還是沒有改善。」';history='有氣喘病史，本次症狀持續加劇；已使用自備短效型支氣管擴張劑。無已知藥物過敏；其他 SAMPLE 項目無特殊。';}
+ else if(/過敏/.test(t)){opening=infant?'家屬：「他吃完東西後全身紅疹，臉也腫起來了。」':'患者：「接觸後全身很癢，喉嚨緊、很喘又頭暈。」';history='症狀於接觸題目所列過敏原後短時間內發生。無其他已知急性疾病；本題設定救護車已配置符合情境規格的腎上腺素注射筆，是否施打仍須由選手確認適應症、資格與當地授權。';}
+ else if(/中風/.test(t)){opening='患者語言含糊，家屬表示：「他突然嘴歪、右手抬不起來。」';history='最後正常時間為35分鐘前；症狀突然發生。家屬否認本次發作伴隨抽搐；抗凝血或抗血小板用藥情形須由選手主動詢問後提供。';}
+ else if(/敗血/.test(t)){opening=infant?'家屬：「他發燒、喝奶變少，尿布也比平常少。」':'患者：「發燒發冷兩天，今天非常虛弱。」';history=infant?'發燒與進食下降，尿量減少；出生史無特殊，無已知過敏。':'發燒兩天並有泌尿道症狀；無外傷，無已知藥物過敏。';}
+ else if(/肺栓塞/.test(t)){opening='患者：「突然很喘、胸口痛，剛剛差點昏倒。」';history='近期接受手術且活動量下降，單側小腿腫脹；症狀突然發作。無外傷。';}
+ else if(/高血鉀/.test(t)&&!/壓砸/.test(t)){opening='患者：「全身沒有力氣，心跳好像很慢。」';history='洗腎病史，昨日未完成透析；無外傷。用藥與最後透析時間須由選手主動詢問。';}
+ else if(/壓砸傷高血鉀/.test(t)){opening='患者：「雙腿被壓住很久，重物剛被移開後越來越不舒服。」';history='雙下肢受壓約兩小時，救援人員已解除重物；若選手詢問，裁判告知解除前未完成院前預處置。無已知藥物過敏。';}
+ else if(/異物梗塞/.test(t)){opening=infant?'家屬：「他吃東西後突然咳不出聲音！」':'旁人：「他剛才進食後突然噎到！」';history='症狀於進食時突然發生；食物種類依派遣內容。無外傷，其他病史與過敏史無特殊。';}
+ else if(/哮吼/.test(t)){opening='家屬：「他咳嗽的聲音像狗叫，吸氣也有怪聲。」';history='上呼吸道症狀後出現犬吠樣咳嗽與吸氣性喘鳴；無異物哽塞目擊史、無已知過敏。';}
+ else if(/細支氣管炎/.test(t)){opening='家屬：「他感冒兩天，今天喝奶變少，也越喘越沒精神。」';history='流鼻水、咳嗽兩天，餵食量下降；足月出生，無重大病史或已知過敏。';}
+ else if(/痙攣/.test(t)){opening='家屬：「他一直抽搐，請幫幫他！」';history='抽搐時間依題目階段；無外傷目擊史。發燒、既往痙攣、用藥與過敏史須由選手詢問後按題目提供。';}
+ else if(/心肌炎/.test(t)){opening='家屬：「他感冒後變得很累，喝奶很差，呼吸也越來越快。」';history='近期有感染症狀，餵食及活動力明顯下降；無外傷，無已知先天性心臟病。';}
+ else if(c.trauma==='trauma'){opening=infant?'家屬依派遣內容描述受傷經過，嬰兒以哭聲、動作與反應呈現症狀。':'患者或目擊者依派遣內容描述受傷經過。';history='受傷時間、機轉、是否失去意識及主要出血依題目提供；AMPLE其餘項目若未列明，統一回答無已知過敏、無固定用藥、無重大病史，最後進食時間不詳。';}
+ const baseEquipment=['個人防護裝備','血壓計／聽診器／血氧機','氧氣組','成人與嬰兒尺寸 BVM／面罩','抽吸設備','心電圖監視器／AED'];
+ if(c.trauma==='trauma')baseEquipment.push('創傷敷料、彈繃、止血帶、止血紗布、頸椎與搬運固定器材');
+ if(/骨盆|多重創傷/.test(t))baseEquipment.push('骨盆固定器材');
+ if(/中風|痙攣/.test(t))baseEquipment.push('血糖機與採血用品');
+ if(/輸液/.test(p.scope)||/敗血|神經性休克|過敏|高血鉀|壓砸/.test(t))baseEquipment.push('EMT-2 周邊靜脈與輸液訓練器材');
+ if(/氣喘/.test(t))baseEquipment.push('患者自備短效型支氣管擴張劑');
+ if(/過敏/.test(t))baseEquipment.push('本題救護車配置之腎上腺素注射筆');
+ if(infant&&c.mode==='ohca')baseEquipment.push('兒童衰減器／兒童貼片；若訓練器材無此配備，裁判於題前註明替代方式');
+ let treatmentResponse='完成支持性處置後，裁判提供處置前後的呼吸、循環與意識變化；患者仍屬危急，必須快速後送。';
+ if(c.category==='大出血')treatmentResponse='止血方法與位置正確時，可見外出血停止；若為內出血情境，外觀不會因包紮而改善，仍須保暖並立即後送。';
+ else if(/異物梗塞/.test(t))treatmentResponse='依當下嚴重度正確處置時，裁判回覆咳嗽、發聲、氣流及胸廓起伏是否改變；不得預設未見的異物已排出。';
+ else if(c.category==='呼吸道與呼吸'||/顏面/.test(t))treatmentResponse='氣道姿勢、抽吸或 BVM 有效時，裁判回覆氣道較通暢且每次通氣可見胸廓起伏；仍依腳本提供後續生命徵象。';
+ else if(/中風/.test(t))treatmentResponse='血糖與中風量表結果可完成紀錄，但神經缺損不因院前支持性處置立即消失；應完成適當醫院選擇與通報。';
+ else if(/冠心症/.test(t))treatmentResponse='監測與十二導程完成後提供可判讀紀錄；症狀與循環是否改善只依腳本，不得由裁判自行宣告 STEMI 或給予未設定藥物反應。';
+ else if(/過敏/.test(t))treatmentResponse='符合資格與授權完成處置後，裁判依腳本回覆氣道聲音、呼吸作功與灌流變化；不得因皮疹減輕即停止監測或後送。';
+ if(c.mode==='ohca')treatmentResponse=`前段正確處置可暫時改善或延緩惡化，但本題固定於評估中轉為 OHCA；裁判仍依設定時序進入轉折。${treatmentResponse}`;
+ return {
+  opening,history,
+  exam:`身體檢查固定發現：${c.problem} 只有在選手口述或實際完成相對應檢查後提供；未檢查不得主動提示。`,
+  correct:treatmentResponse,
+  delayed:`未完成關鍵處置或處置無效：依目前階段所列生命徵象惡化；裁判不得自行提前、延後或增加未設定的病況。`,
+  setup:`標準設定為2名選手、1名裁判；嬰兒OHCA因此採雙人CPR評分。若實際人數不同，須在開始前切換相符的CPR比例與分工評分。`,
+  equipment:baseEquipment
+ };
+}
+
+function criticalActionIndexes(c){
+ const t=c.title;
+ if(/異物梗塞/.test(t))return /部分/.test(t)?[0,2]:(c.age==='infant'?[0,3]:[0,2]);
+ if(/氣喘/.test(t))return [3,5];
+ if(/冠心症/.test(t))return [2,5];
+ if(/過敏/.test(t))return [0,3];
+ if(/中風/.test(t))return [1,2];
+ if(/敗血/.test(t))return [0,5];
+ if(/肺栓塞/.test(t))return [2,5];
+ if(/高血鉀|壓砸傷高血鉀/.test(t))return [1,4];
+ if(/頭部外傷|腦傷|床面跌落|高處跌落/.test(t))return [2,5];
+ if(/連枷胸|張力性氣胸|胸部壓砸|顏面/.test(t))return [2,5];
+ return [0,1];
+}
+
+function sourceLinks(c){
+ const links=[
+  ['2025 救護技術員教科書（全書）','https://ebook.nfa.gov.tw/1140527/mobile/index.html'],
+  ['2025 單項技術操作手冊（全書）','https://ebook.nfa.gov.tw/1140526/mobile/index.html']
+ ];
+ const t=c.title;
+ if(c.mode==='ohca')links.push(['教科書電子頁 125｜CPR 與 AED','https://ebook.nfa.gov.tw/1140527/files/basic-html/page125.html']);
+ if((c.category==='大出血'||/槍傷|撕裂|前臂|股骨/.test(t))&&!/腹部|腹腔|骨盆|腹股溝|頭皮/.test(t))links.push(['教科書電子頁 142｜直接加壓與肢體止血帶','https://ebook.nfa.gov.tw/1140527/files/basic-html/page142.html']);
+ if(c.trauma==='trauma')links.push(['教科書電子頁 206｜XABCDE 與創傷評估','https://ebook.nfa.gov.tw/1140527/files/basic-html/page206.html']);
+ if(/刀傷/.test(t))links.push(['教科書電子頁 261｜傷口與留置異物','https://ebook.nfa.gov.tw/1140527/files/basic-html/page261.html']);
+ if(/中風/.test(t)){links.push(['教科書電子頁 188｜G-FAST／中風量表','https://ebook.nfa.gov.tw/1140527/files/basic-html/page188.html']);links.push(['教科書電子頁 225｜中風時間、血糖與送醫','https://ebook.nfa.gov.tw/1140527/files/basic-html/page225.html']);}
+ if(/過敏/.test(t))links.push(['教科書電子頁 231｜過敏性休克','https://ebook.nfa.gov.tw/1140527/files/basic-html/page231.html']);
+ return links;
+}
+
+function displayStandards(c,p){
+ let base=[...c.standard];
+ if(c.category==='大出血'&&/頭皮|腹部|腹腔|骨盆|腹股溝/.test(c.title))base=base.filter(v=>!v.includes('止血帶')&&!v.includes('遠端循環'));
+ return [...new Set([...base,...p.interventions])];
+}
+
+function professionalRubric(c){
+ const infant=c.age==='infant',p=clinicalProfile(c);
+ const primary=infant?[['完成 PAT 外觀評估',2],['完成 PAT 呼吸作功評估',2],['完成 PAT 皮膚循環評估',2],['檢查致命性出血',2],['評估呼吸道',2],['測量呼吸速率',1],['評估呼吸品質',1],['測量肱動脈心率',1],['評估肱動脈品質',1],['測量 CRT',2],['評估意識',2],['暴露必要檢查部位',1],['完成覆蓋保暖',1]]:[['檢查致命性出血',2],['評估意識',2],['評估呼吸道',2],['依機轉考量頸椎保護',2],['測量呼吸速率',1],['評估呼吸品質',1],['測量脈搏速率',2],['評估脈搏品質',2],['評估膚色',1],['評估皮膚溫度與乾濕',1],['評估神經狀態',2],['暴露必要檢查部位',1],['完成覆蓋保暖',1]];
+ const outcome=c.mode==='ohca'?(infant?['10 秒內評估呼吸與肱動脈搏','先提供有效氧合與通氣','有效給氧通氣後 HR<60/min 且有心肺功能不良時開始 CPR','雙人採雙拇指環抱胸廓按壓法','按壓深度約 4 cm／胸廓前後徑 1/3','按壓速率 100–120 次／分','雙人按壓通氣比 15:2','開啟 AED','有兒童衰減系統／貼片時優先使用','分析時確認無人接觸','依 AED 語音處置','分析後立即恢復按壓']:['10 秒內確認無正常呼吸／無頸動脈搏','立即開始 CPR','掌根置於胸骨下半部','按壓速率 100–120 次／分','按壓深度 5–6 cm','每次完全回彈','按壓通氣比 30:2','開啟 AED','正確貼妥貼片','分析時確認無人接觸','依 AED 語音處置','分析後立即恢復按壓']):['將患者正確分級為危急個案','提出與題目發現相符的工作診斷','口述立即後送優先級','選定符合病況的適當收治醫院','記錄症狀發作或受傷時間','記錄重要處置完成時間','記錄重新評估生命徵象','向接收醫院完成重點交接'];
+ const criticalIndexes=criticalActionIndexes(c);
+ const interventionScores=p.interventions.map((v,i)=>[v,3,criticalIndexes.includes(i)?'critical-action':'standard-action']);
+ return [
+  ['現場準備',[['自我介紹',2],['確認現場安全',2],['穿戴適當 PPE',2],['器材放置適當位置',2]]],
+  ['初級評估',primary],
+  [`${c.title}｜重點評估`,p.focus.map(v=>[v,2])],
+  [`${c.title}｜關鍵處置`,interventionScores],
+  ['持續評估',[['重新評估意識',2],['重新評估呼吸',2],['重新評估脈搏',2],['重新測量生命徵象',2],['辨識病況惡化',2]]],
+  [c.mode==='ohca'?'OHCA 處置':'有生命徵象處置與後送',outcome.map(v=>[v,c.mode==='ohca'?2:3])],
+  ['團隊表現',[['明確分工',2],['使用閉環溝通',2]]],
+  ['重大錯誤紀錄（不自動改分，依主辦規則判定）',p.errors.map(v=>[v,0,'critical-error'])]
+ ];
+}
 
 let age='adult',caseType='nontrauma',careMode='als',caseIdx=0,stage=0,defaultSeconds=300,time=300,running=false,tick=null,checks={};
 function currentCases(){return cases.filter(c=>c.age===age&&c.trauma===caseType&&c.mode===careMode)}
-function renderCases(){const list=currentCases();if(!list.includes(cases[caseIdx]))caseIdx=cases.indexOf(list[0]);$('scenarioList').innerHTML=list.map((c,n)=>`<button class="scenario ${cases[caseIdx]===c?'active':''}" data-i="${cases.indexOf(c)}"><span class="num">${String(n+1).padStart(2,'0')}</span><strong>${c.title}</strong><small>${c.category}<br>${c.mode==='ohca'?c.rhythm:'ALS／維持生命徵象'}</small></button>`).join('');document.querySelectorAll('.scenario').forEach(b=>b.onclick=()=>selectCase(+b.dataset.i));$('adultTab').classList.toggle('active',age==='adult');$('infantTab').classList.toggle('active',age==='infant');$('nontraumaTab').classList.toggle('active',caseType==='nontrauma');$('traumaTab').classList.toggle('active',caseType==='trauma');$('alsTab').classList.toggle('active',careMode==='als');$('ohcaTab').classList.toggle('active',careMode==='ohca')}
-function renderCase(){const c=cases[caseIdx],s=c.stages[stage];$('caseType').textContent=c.type;$('caseTitle').textContent=c.title;$('dispatch').textContent=c.dispatch;$('stageBadge').textContent=`階段 ${stage+1}／${c.stages.length}　${s.name}`;$('vitals').innerHTML=s.v.map((v,i)=>`<div class="vital"><span>${['狀態／意識','心率／脈搏','呼吸','血壓／灌流','血氧／其他'][i]}</span><b>${v}</b></div>`).join('');$('caseContent').innerHTML=`<div class="info-grid"><div class="card ${s.critical?'critical':''}"><h3>裁判描述</h3><p>${s.scene}</p></div><div class="card ${s.critical?'critical':''}"><h3>選手詢問／完成評估後提供</h3><p class="answer">${s.ask}</p></div><div class="card standard"><h3>2025 教科書＋單項技術操作手冊｜標準處置</h3><ul>${c.standard.map(v=>`<li>${v}</li>`).join('')}</ul><p style="margin-top:8px;color:var(--muted);font-size:12px">依據：${c.pages}</p></div></div>`;$('dots').innerHTML=c.stages.map((_,i)=>`<span class="dot ${i<=stage?'on':''}"></span>`).join('');$('prevBtn').disabled=stage===0;$('nextBtn').textContent=stage===c.stages.length-1?'完成本題':'下一階段'}
-function renderScore(){let n=0;$('scoreList').innerHTML=rubric(cases[caseIdx]).map(([g,items])=>`<div class="score-group"><h3>${g}｜${items.reduce((a,v)=>a+v[1],0)} 分</h3>${items.map(([label,pts])=>{const id=`${caseIdx}-${n++}`;return `<div class="item"><input type="checkbox" id="c${id}" data-id="${id}" data-pts="${pts}" ${checks[id]?'checked':''}><label for="c${id}">${label}</label><span class="pts">${pts}</span></div>`}).join('')}</div>`).join('');document.querySelectorAll('#scoreList input').forEach(e=>e.onchange=()=>{checks[e.dataset.id]=e.checked;calc()});calc()}
-function calc(){let sum=0;document.querySelectorAll('#scoreList input:checked').forEach(e=>sum+=+e.dataset.pts);sum=Math.max(0,sum-(+$('penalty').value||0));$('totalScore').textContent=sum;return sum}
+function renderCases(){const list=currentCases();if(!list.includes(cases[caseIdx]))caseIdx=cases.indexOf(list[0]);$('scenarioList').innerHTML=list.map((c,n)=>`<button class="scenario ${cases[caseIdx]===c?'active':''}" data-i="${cases.indexOf(c)}"><span class="num">${String(n+1).padStart(2,'0')}</span><strong>${c.title}</strong><small>${c.category}<br>${c.mode==='ohca'?c.rhythm:'有生命徵象'}</small></button>`).join('');document.querySelectorAll('.scenario').forEach(b=>b.onclick=()=>selectCase(+b.dataset.i));$('adultTab').classList.toggle('active',age==='adult');$('infantTab').classList.toggle('active',age==='infant');$('nontraumaTab').classList.toggle('active',caseType==='nontrauma');$('traumaTab').classList.toggle('active',caseType==='trauma');$('alsTab').classList.toggle('active',careMode==='als');$('ohcaTab').classList.toggle('active',careMode==='ohca')}
+function stageWindow(i,total){const cuts=[0,.3,.6,1],start=Math.round(defaultSeconds*cuts[i]),end=Math.round(defaultSeconds*cuts[i+1]||defaultSeconds);const f=v=>`${Math.floor(v/60)}:${String(v%60).padStart(2,'0')}`;return `${f(start)}–${f(end)}`}
+function renderCase(){
+ const c=cases[caseIdx],s=c.stages[stage],p=clinicalProfile(c),j=judgeScript(c,p),links=sourceLinks(c);
+ $('caseType').textContent=c.type;$('caseTitle').textContent=c.title;$('dispatch').textContent=c.dispatch;
+ $('stageBadge').textContent=`階段 ${stage+1}／${c.stages.length}　${stageWindow(stage,c.stages.length)}　${s.name}`;
+ $('vitals').innerHTML=s.v.map((v,i)=>`<div class="vital"><span>${['狀態／意識','心率／脈搏','呼吸','血壓／灌流','血氧／其他'][i]}</span><b>${v}</b></div>`).join('');
+ $('caseContent').innerHTML=`<div class="info-grid">
+  <div class="card ${s.critical?'critical':''}"><h3>本階段｜裁判主動提供</h3><p>${s.scene}</p></div>
+  <div class="card ${s.critical?'critical':''}"><h3>本階段｜完成對應評估後提供</h3><p class="answer">${s.ask}</p></div>
+  <div class="card judge-card"><h3>患者／家屬開場台詞</h3><p>${j.opening}</p></div>
+  <div class="card judge-card"><h3>固定病史回答</h3><p>${j.history}</p></div>
+  <div class="card judge-card"><h3>檢查後提供</h3><p>${j.exam}</p></div>
+  <div class="card judge-card"><h3>處置後反應</h3><p><b>正確且及時：</b>${j.correct}</p><p class="response-delay"><b>延遲、錯誤或無效：</b>${j.delayed}</p></div>
+  <div class="card setup-card"><h3>模擬設定與題前器材</h3><p>${j.setup}</p><ul>${j.equipment.map(v=>`<li>${v}</li>`).join('')}</ul></div>
+  <div class="card"><h3>裁判給資訊規則</h3><p>未詢問、未檢查或未執行的項目不主動提示；未載明且會影響判斷的資料，統一回答「現場無法取得」。裁判不得臨時新增會改變診斷、處置或得分的資訊。</p></div>
+  <div class="card"><h3>資格範圍</h3><p>${p.scope}。所有進階技術仍須依資格、救護車配置、當地救護指引及醫療指導執行。</p></div>
+  <div class="card standard"><h3>標準處置與本題關鍵行為</h3><ul>${displayStandards(c,p).map(v=>`<li>${v}</li>`).join('')}</ul></div>
+  <div class="card source-card"><h3>教材對照</h3><p>${p.source}</p><ul>${links.map(([label,url])=>`<li><a href="${url}" target="_blank" rel="noopener">${label}</a></li>`).join('')}</ul><p class="source-detail">僅對已核實的電子書頁面標示頁碼；其餘依章節名稱與單項技術名稱查核，避免推定頁碼。</p></div>
+  <div class="card critical"><h3>裁判掌握｜重大錯誤</h3><ul>${p.errors.map(v=>`<li>${v}</li>`).join('')}</ul><p class="source-detail">此區只做事件紀錄，不自動改變分數；是否判定不及格或終止操作，須依主辦單位事前公布規則。</p></div>
+ </div>`;
+ $('dots').innerHTML=c.stages.map((_,i)=>`<span class="dot ${i<=stage?'on':''}" aria-label="階段 ${i+1}${i<=stage?' 已到達':''}"></span>`).join('');
+ $('prevBtn').disabled=stage===0;$('nextBtn').textContent=stage===c.stages.length-1?'完成本題':'下一階段';
+}
+function renderScore(){
+ let n=0;
+ $('scoreList').innerHTML=professionalRubric(cases[caseIdx]).map(([g,items])=>{const possible=items.reduce((a,v)=>a+v[1],0);return `<div class="score-group ${items.some(v=>v[2]==='critical-error')?'error-group':''}"><h3>${g}${possible?`｜${possible} 分`:''}</h3>${items.map(([label,pts,type,allowNA])=>{const id=`${caseIdx}-${n++}`,value=checks[id]??'0';if(type==='critical-error')return `<div class="item critical-score"><input type="checkbox" id="c${id}" data-id="${id}" data-error="1" ${value==='1'?'checked':''}><label for="c${id}">${label}</label><span class="pts">重大</span></div>`;const na=allowNA?`<option value="na" ${value==='na'?'selected':''}>不適用</option>`:'';return `<div class="item ${type==='critical-action'?'key-action':''}"><label for="c${id}">${type==='critical-action'?'<span class="key-tag">關鍵</span>':''}${label}</label><select id="c${id}" data-id="${id}" data-pts="${pts}" aria-label="${label}得分"><option value="0" ${value==='0'?'selected':''}>0</option><option value="0.5" ${value==='0.5'?'selected':''}>50%</option><option value="1" ${value==='1'?'selected':''}>100%</option>${na}</select><span class="pts">${pts}</span></div>`}).join('')}</div>`}).join('');
+ document.querySelectorAll('#scoreList select').forEach(e=>e.onchange=()=>{checks[e.dataset.id]=e.value;calc()});
+ document.querySelectorAll('#scoreList input[data-error]').forEach(e=>e.onchange=()=>{checks[e.dataset.id]=e.checked?'1':'0';calc()});calc();
+}
+function criticalErrorCount(){return document.querySelectorAll('#scoreList input[data-error]:checked').length}
+function calc(){
+ let earned=0,possible=0;
+ document.querySelectorAll('#scoreList select').forEach(e=>{if(e.value==='na')return;const pts=+e.dataset.pts;possible+=pts;earned+=pts*(+e.value)});
+ let sum=possible?earned/possible*100:0;sum=Math.max(0,sum-(+$('penalty').value||0));sum=Math.round(sum*10)/10;
+ $('totalScore').textContent=sum;$('majorErrorCount').textContent=criticalErrorCount();return sum;
+}
 function selectCase(i){caseIdx=i;stage=0;stop();time=defaultSeconds;checks={};$('penalty').value=0;$('startBtn').textContent='開始計時';updateTimer();renderCases();renderCase();renderScore()}
 function setFilter(kind,value){if(kind==='age')age=value;if(kind==='type')caseType=value;if(kind==='mode')careMode=value;selectCase(cases.indexOf(currentCases()[0]))}
 function updateTimer(){const m=Math.floor(time/60),s=time%60;$('timer').textContent=`${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;$('timer').className='timer'+(time<=30?' danger':time<=60?' warn':'')}
 function formatDuration(sec){const m=Math.floor(sec/60),s=sec%60;return s?`${m} 分 ${s} 秒`:`${m} 分鐘`}
 function start(){if(running){stop();return}running=true;$('startBtn').textContent='暫停';document.querySelectorAll('.time-adjust button').forEach(b=>b.disabled=true);tick=setInterval(()=>{if(time>0){time--;updateTimer()}else{stop();finish('本題時間到',`${formatDuration(defaultSeconds)}結束，請停止操作並完成裁判評分。`)}},1000)}
 function stop(){running=false;clearInterval(tick);$('startBtn').textContent=time===defaultSeconds?'開始計時':'繼續計時';document.querySelectorAll('.time-adjust button').forEach(b=>b.disabled=false)}
-function adjustTime(delta){if(running)return;defaultSeconds=Math.min(1800,Math.max(30,defaultSeconds+delta));time=defaultSeconds;$('timeSetting').textContent=`設定 ${formatDuration(defaultSeconds)}`;$('startBtn').textContent='開始計時';updateTimer()}
-function finish(title,text){stop();$('modalTitle').textContent=title;$('modalText').textContent=text;$('finalScore').textContent=calc()+' 分';$('finalStage').textContent=`${stage+1}／${cases[caseIdx].stages.length}`;$('overlay').classList.add('show')}
-$('adultTab').onclick=()=>setFilter('age','adult');$('infantTab').onclick=()=>setFilter('age','infant');$('nontraumaTab').onclick=()=>setFilter('type','nontrauma');$('traumaTab').onclick=()=>setFilter('type','trauma');$('alsTab').onclick=()=>setFilter('mode','als');$('ohcaTab').onclick=()=>setFilter('mode','ohca');$('minusTime').onclick=()=>adjustTime(-60);$('minusThirty').onclick=()=>adjustTime(-30);$('plusThirty').onclick=()=>adjustTime(30);$('plusTime').onclick=()=>adjustTime(60);$('startBtn').onclick=start;$('resetBtn').onclick=()=>{if(confirm('確定重設本題的時間、階段與評分？'))selectCase(caseIdx)};$('prevBtn').onclick=()=>{if(stage>0){stage--;renderCase()}};$('nextBtn').onclick=()=>{if(stage<cases[caseIdx].stages.length-1){stage++;renderCase()}else finish('本題完成',careMode==='ohca'?'已進入 OHCA 階段，請確認最後得分與扣分。':'已完成 ALS 處置與後送決策，請確認最後得分與扣分。')};$('penalty').oninput=calc;$('closeModal').onclick=()=>$('overlay').classList.remove('show');
+function adjustTime(delta){if(running)return;defaultSeconds=Math.min(1800,Math.max(30,defaultSeconds+delta));time=defaultSeconds;$('timeSetting').textContent=`設定 ${formatDuration(defaultSeconds)}`;$('startBtn').textContent='開始計時';updateTimer();renderCase()}
+function finish(title,text){stop();$('modalTitle').textContent=title;$('modalText').textContent=text;$('finalScore').textContent=calc()+' 分';$('finalStage').textContent=`${stage+1}／${cases[caseIdx].stages.length}`;$('finalErrors').textContent=`重大錯誤紀錄：${criticalErrorCount()} 項（依主辦規則另行判定）`;$('overlay').classList.add('show')}
+$('adultTab').onclick=()=>setFilter('age','adult');$('infantTab').onclick=()=>setFilter('age','infant');$('nontraumaTab').onclick=()=>setFilter('type','nontrauma');$('traumaTab').onclick=()=>setFilter('type','trauma');$('alsTab').onclick=()=>setFilter('mode','als');$('ohcaTab').onclick=()=>setFilter('mode','ohca');$('minusTime').onclick=()=>adjustTime(-60);$('minusThirty').onclick=()=>adjustTime(-30);$('plusThirty').onclick=()=>adjustTime(30);$('plusTime').onclick=()=>adjustTime(60);$('startBtn').onclick=start;$('resetBtn').onclick=()=>{if(confirm('確定重設本題的時間、階段與評分？'))selectCase(caseIdx)};$('prevBtn').onclick=()=>{if(stage>0){stage--;renderCase()}};$('nextBtn').onclick=()=>{if(stage<cases[caseIdx].stages.length-1){stage++;renderCase()}else finish('本題完成',careMode==='ohca'?'已進入 OHCA 階段，請確認最後得分與重大錯誤紀錄。':'已完成有生命徵象處置與後送決策，請確認最後得分與重大錯誤紀錄。')};$('penalty').oninput=calc;$('closeModal').onclick=()=>$('overlay').classList.remove('show');
 document.addEventListener('keydown',e=>{if(e.code==='Space'&&!['INPUT','BUTTON'].includes(e.target.tagName)){e.preventDefault();start()}if(e.key==='ArrowRight')$('nextBtn').click();if(e.key==='ArrowLeft')$('prevBtn').click()});
 renderCases();renderCase();renderScore();updateTimer();
 
@@ -187,5 +346,5 @@ document.addEventListener('keydown',e=>{const k=e.key.toLowerCase();const blocke
 console.info('%c內容使用提醒','font-size:18px;font-weight:bold;color:#c95d56','本系統內容僅供救護情境演練使用，請勿未經授權複製、重製或散布。');
 
 </script>
-<script data-goatcounter="https://emsscenario.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body></html>
+
